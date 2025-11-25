@@ -25,10 +25,28 @@ def extract_data(file_path='data/faturas_raw.json'):
         print(f"❌ Erro: Arquivo '{file_path}' não encontrado. Certifique-se de que a pasta 'data' e o arquivo estão no local correto.")
         return None
 
-# Ponto de entrada do script
+# ==============================================================================
+# FASE L: LOAD (Carregamento)
+# ==============================================================================
+def load_data(df, output_file='data/faturas_processed.csv'):
+    """Carrega o DataFrame transformado para um arquivo CSV."""
+    
+    print(f"⏳ Iniciando Carregamento (Fase L)...")
+    
+    # Salva o DataFrame no formato CSV (Comma Separated Values)
+    # index=False evita salvar o índice numérico do Pandas no arquivo
+    df.to_csv(output_file, index=False)
+    
+    print(f"✅ Carregamento Concluído! Dados salvos em: {output_file}")
+
+# ==============================================================================
+# PONTO DE ENTRADA PRINCIPAL (Atualizado)
+# ==============================================================================
 if __name__ == "__main__":
     df_extraido = extract_data()
     
-    # A Fase T (Transformação) virá aqui no próximo passo!
     if df_extraido is not None:
-        pass
+        df_transformado = transform_data(df_extraido)
+        
+        # Chamada para a nova Fase L (LOAD)
+        load_data(df_transformado)
