@@ -1,8 +1,8 @@
 
 # 🚀 Desafio de Projeto DIO: Reimaginação de Pipeline ETL com Python
 
-## 🎯 Objetivo do Projeto
-Este projeto tem como objetivo principal **reimaginar** a estrutura de um pipeline ETL (Extração, Transformação, Carga), conforme proposto no desafio, aplicando conceitos de Python e Pandas em um novo domínio de aplicação: o processamento de dados tabulares (como faturas ou documentos fiscais). O foco é demonstrar a capacidade de limpeza, padronização e estruturação de dados.
+  ## 🎯 Objetivo do Projeto
+  Este projeto tem como objetivo principal **reimaginar** a estrutura de um pipeline ETL (Extração, Transformação, Carga), conforme proposto no desafio, aplicando conceitos de Python e Pandas em um novo domínio de aplicação: o processamento de dados tabulares (como faturas ou documentos fiscais). O foco é demonstrar a capacidade de limpeza, padronização e estruturação de dados.
 
 ## ⚙️ Arquitetura do Pipeline
 
@@ -17,8 +17,8 @@ A solução foi desenvolvida seguindo o fluxo ETL tradicional, utilizando ferram
 ## 🛠️ Tecnologias Utilizadas
 * **Python:** Linguagem principal para desenvolvimento.
 * **Pandas:** Biblioteca fundamental para a manipulação e limpeza de dados na fase de **Transformação**.
-* **Luigi (Opcional - Futuro):** Framework de orquestração para gerenciar a dependência entre as etapas E, T e L (Mencionar o Luigi aqui mostra seu conhecimento do módulo, mas não é estritamente necessário para o desafio básico).
-
+* **Luigi (Opcional - Futuro):** Framework de orquestração para gerenciar a dependência entre as etapas E, T e L
+* 
 ## 💡 Como Executar
 1.  Clone este repositório.
 2.  Instale o Pandas (`pip install pandas`).
